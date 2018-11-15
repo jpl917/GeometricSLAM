@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC   -Wall  -O3 -march=native    -shared -Wl,-soname,liblsd-1.5.so -o ../lib/liblsd-1.5.so CMakeFiles/lsd-1.5.dir/lsd-1.5/lsd.c.o 

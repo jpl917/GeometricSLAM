@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jpl/lines/Thirdparty/lsd/lsd-1.5/lsd.h
+
+/home/jpl/lines/Thirdparty/lsd/lsd-1.5/lsd_call_example.c
+stdio.h
+-
+lsd.h
+/home/jpl/lines/Thirdparty/lsd/lsd-1.5/lsd.h
+

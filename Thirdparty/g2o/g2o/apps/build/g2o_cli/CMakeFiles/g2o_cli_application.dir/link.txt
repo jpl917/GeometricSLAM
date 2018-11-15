@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/g2o_cli_application.dir/g2o.o  -o g2o  -L/home/jpl/ORB_SLAM2/Thirdparty/g2o/g2o/apps/build/g2o_cli -rdynamic libcli.a -lcore -ldl 

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jpl/lines/Thirdparty/lsd/lsd-1.5/lsd.c
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+limits.h
+-
+float.h
+-
+lsd.h
+/home/jpl/lines/Thirdparty/lsd/lsd-1.5/lsd.h
+
+/home/jpl/lines/Thirdparty/lsd/lsd-1.5/lsd.h
+

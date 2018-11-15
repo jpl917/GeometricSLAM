@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jpl/lines/Thirdparty/levmar-2.6/levmar.h
+
+/home/jpl/lines/Thirdparty/levmar-2.6/lmdemo.c
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+float.h
+-
+levmar.h
+/home/jpl/lines/Thirdparty/levmar-2.6/levmar.h
+

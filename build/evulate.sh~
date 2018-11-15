@@ -1,0 +1,1 @@
+python ~/TUM_Datasets/Tools/evaluate_ate.py --plot ate 1.txt ~/TUM_Datasets/4Structure_vs_Texture/f3_structure_notexture_far/groundtruth.txt

@@ -1,0 +1,11 @@
+path="/home/jpl/LINE_Datasets/stair2/"
+para="/home/jpl/lines/TUM4.yaml"
+
+./lineslam ${path} ${para}
+#./naive_slam ${path} ${para}
+
+#python /home/jpl/TUM_Datasets/Tools/evaluate_ate.py --plot ate traject.txt ${path}groundtruth.txt
+
+#python /home/jpl/TUM_Datasets/Tools/evaluate_rpe.py --fixed_delta --plot rpe ${path}groundtruth.txt  traject.txt
+
+#python ~/TUM_Datasets/Tools/associate.py rgb.txt depth.txt > associations.txt

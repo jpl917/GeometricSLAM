@@ -1,0 +1,2 @@
+/usr/bin/ar cr libcli.a  CMakeFiles/g2o_cli_library.dir/dl_wrapper.o CMakeFiles/g2o_cli_library.dir/output_helper.o CMakeFiles/g2o_cli_library.dir/g2o_common.o
+/usr/bin/ranlib libcli.a

@@ -1,0 +1,37 @@
+#
+# Try to find ARMADILLO
+# Once done this will define
+#
+# ARMADILLO_FOUND           - system has ARMADILLO
+# ARMADILLO_INCLUDE_DIRS    - the ARMADILLO include directories
+# ARMADILLO_LIBRARIES       - Link these to use ARMADILLO
+
+IF (ARMADILLO_INCLUDE_DIRS)
+  # Already in cache, be silent
+  SET(ARMADILLO_FIND_QUIETLY TRUE)
+ENDIF (ARMADILLO_INCLUDE_DIRS)
+
+FIND_PATH(ARMADILLO_INCLUDE_DIR armadillo
+	  PATHS /usr/local/include
+                /usr/include
+		/usr/include/armadillo_bits
+	 )
+
+SET(ARMADILLO_LIBRARY_DIR NOTFOUND CACHE PATH "The directory where the ARMADILLO libraries can be found.")
+SET(SEARCH_PATHS
+    "${ARMADILLO_INCLUDE_DIR}/../lib"
+    "${ARMADILLO_INCLUDE_DIR}/../../lib"
+    "${ARMADILLO_INCLUDE_DIR}/../lib64"
+    "${ARMADILLO_INCLUDE_DIR}/../../lib64"
+    "${ARMADILLO_LIBRARY_DIR}")
+FIND_LIBRARY(ARMADILLO_LIBRARY NAMES armadillo PATHS ${SEARCH_PATHS})
+
+INCLUDE (FindPackageHandleStandardArgs)
+
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(armadillo DEFAULT_MSG ARMADILLO_LIBRARY ARMADILLO_INCLUDE_DIR)
+
+IF (ARMADILLO_FOUND)
+   SET(ARMADILLO_LIBRARIES "${ARMADILLO_LIBRARY}")
+   SET(ARMADILLO_INCLUDE_DIRS "${ARMADILLO_INCLUDE_DIR}")
+ENDIF (ARMADILLO_FOUND)
+
